@@ -1,0 +1,19 @@
+{
+    "usuarios": [
+        {
+            "name": "Rodrigo Fernandes",
+            "senha": "12345",
+            "id": 1
+        },
+        {
+            "name": "Matheus Zanardi",
+            "senha": "12345",
+            "id": 2
+        },
+        {
+            "name": "Admin",
+            "senha": "12345",
+            "id": 3
+        }
+    ]
+}
