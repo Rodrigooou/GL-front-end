@@ -2,11 +2,13 @@
     "usuarios": [
         {
             "name": "Rodrigo Fernandes",
+            "email": "rodrigofserafim@gmail.com",
             "senha": "12345",
             "id": 1
         },
         {
             "name": "Matheus Zanardi",
+            "email": "matheuszanardi@gmail.com",
             "senha": "12345",
             "id": 2
         },

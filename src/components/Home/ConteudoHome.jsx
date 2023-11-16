@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./ConteudoHome.scss"
 
 export default function Conteudo() {
   const navigate = useNavigate();
@@ -17,10 +18,18 @@ export default function Conteudo() {
 
   return (
     <>
-      <h1>Bem Vindo, {storedName}!</h1>
+      <h2>Bem Vindo, {storedName}!</h2>
       <button type="button" onClick={handleLogout}>
         Logout
       </button>
+      <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+      </div>     
     </>
   );
 }

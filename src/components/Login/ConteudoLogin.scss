@@ -1,0 +1,71 @@
+$bg-color: #036eb5;
+$fieldset-bg-color: #2c9be5;
+$input-bg-color: #8cbfe1;
+
+body {
+  color: white;
+  background-color: $bg-color;
+}
+
+main {
+  text-align: center;
+}
+
+fieldset {
+  border: solid $fieldset-bg-color 2px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: $fieldset-bg-color;
+  color: black;
+}
+
+.titulo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100px; 
+  max-width: 100%; 
+  border-radius: 10px; 
+}
+
+.login {
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+}
+
+.login div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid $fieldset-bg-color;
+  border-radius: 10px;
+  background-color: $input-bg-color;
+}
+
+#btnLogar {
+  background-color: #004080;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+#btnLogar:hover {
+  background-color: #002952;
+}
