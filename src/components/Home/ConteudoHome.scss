@@ -11,5 +11,34 @@
     padding: 20px;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid #fff; /* Adiciona borda branca de 1px */
   }
+
+  .item:nth-child(1) {
+    grid-column: span 2; 
+    grid-row: span 10; 
+  }
+  .item:nth-child(2) {
+    grid-column: span 1; 
+    grid-row: span 20; 
+  }
+  .item:nth-child(3) {
+    grid-column: span 1; 
+    grid-row: span 10; 
+  }
+  .item:nth-child(4) {
+    grid-column: span 1; 
+    grid-row: span 10; 
+  }
+  .item:nth-child(5) {
+    grid-column: span 1; 
+    grid-row: span 10; 
+  }
+  .item:nth-child(6) {
+    grid-column: span 1; 
+    grid-row: span 10; 
+  }
+  .item:nth-child(7) {
+    grid-column: span 1; 
+    grid-row: span 10; 
+  }
+

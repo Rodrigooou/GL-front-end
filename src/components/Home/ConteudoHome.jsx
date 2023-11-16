@@ -29,6 +29,7 @@ export default function Conteudo() {
         <div class="item">Item 4</div>
         <div class="item">Item 5</div>
         <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
       </div>     
     </>
   );
