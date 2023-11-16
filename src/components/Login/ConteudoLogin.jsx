@@ -76,7 +76,7 @@ export default function ContentLogin() {
             </div>
             <div className="login">
               <div>
-                <label htmlFor="idName">Nome:</label>
+                <label htmlFor="idName">Email:</label>
                 <input
                   type="email"
                   name="email"

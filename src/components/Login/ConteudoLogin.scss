@@ -5,6 +5,7 @@ $input-bg-color: #8cbfe1;
 body {
   color: white;
   background-color: $bg-color;
+  margin: 0;
 }
 
 main {
@@ -18,6 +19,14 @@ fieldset {
   margin: 0 auto;
   background-color: $fieldset-bg-color;
   color: black;
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
 }
 
 .titulo {
@@ -25,18 +34,22 @@ fieldset {
   text-align: center;
   align-items: center;
   justify-content: center;
-}
 
-img {
-  width: 100px; 
-  max-width: 100%; 
-  border-radius: 10px; 
+  img {
+    width: 80px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
 }
 
 .login {
   align-items: center;
   text-align: left;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 }
 
 .login div {
@@ -64,8 +77,15 @@ input {
   cursor: pointer;
   border: none;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 #btnLogar:hover {
   background-color: #002952;
+}
+
+@media (max-width: 480px) {
+  #btnLogar {
+    margin-top: 15px;
+  }
 }
