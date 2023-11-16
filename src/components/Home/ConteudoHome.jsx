@@ -1,20 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./ConteudoHome.scss"
-import Logout from "../../assets/logout2.png"
-import prototipo from "../../assets/prototipo de tela.png"
+import "./ConteudoHome.scss";
+import Logout from "../../assets/logout2.png";
+import prototipo from "../../assets/prototipo de tela.png";
 
 export default function Conteudo() {
   const navigate = useNavigate();
 
-  // Em outro componente ou parte do código onde você precisa acessar o valor do name
-  const storedName = localStorage.getItem("userName");
+  const storedUser = sessionStorage.getItem("user");
+  const storedName = storedUser ? JSON.parse(storedUser).name : "";
 
   const handleLogout = () => {
-    // Limpar o nome armazenado no localStorage ou realizar qualquer lógica de logout necessária
-    localStorage.removeItem("userName");
+    
+    sessionStorage.removeItem("user");
 
-    // Navegar para a página de login ou a página inicial após o logout
     navigate("/");
   };
 
@@ -22,7 +21,9 @@ export default function Conteudo() {
     <>
       <div className="titulo2">
         <h2>Bem Vindo, {storedName}!</h2>
-        <button  type="button" onClick={handleLogout}><img src={Logout} alt="logout" className="btn"/></button>
+        <button type="button" onClick={handleLogout}>
+          <img src={Logout} alt="logout" className="btn" />
+        </button>
       </div>
       <div class="container">
         <div class="item"><h2 >Health-me</h2><p> Nós Helth-me apresentamos, uma inovadora solução dedicada a orientar os usuários na busca por uma alimentação mais saudável, considerando objetivos específicos. Nosso aplicativo vai além das recomendações tradicionais, oferecendo opções personalizadas e práticas para diversas necessidades, seja ganho de massa muscular, perda de gordura ou manutenção da saúde.</p></div>
