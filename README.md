@@ -3,7 +3,8 @@
 1ESPG - Rodrigo Fernandes Serafim - rm550816
 
 # Logins
-
+Para acessar a API JSON é necessário usar:
+    npm run contatos
 
 ## Contas: USUARIOS
 
