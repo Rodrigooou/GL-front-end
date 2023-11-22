@@ -3,7 +3,8 @@
 1ESPG - Rodrigo Fernandes Serafim - rm550816
 
 # Logins
-
+Para acessar os contatos é necessário dar:
+  npm run contatos
 
 ## Contas: USUARIOS
 
