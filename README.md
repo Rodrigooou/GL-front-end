@@ -3,13 +3,8 @@
 1ESPG - Rodrigo Fernandes Serafim - rm550816
 
 # Logins
-<<<<<<< HEAD
 Para acessar a API JSON é necessário usar:
     npm run contatos
-=======
-Para acessar os contatos é necessário dar:
-  npm run contatos
->>>>>>> e477e35689bad6931af43d399bc022b1745d1bab
 
 ## Contas: USUARIOS
 
