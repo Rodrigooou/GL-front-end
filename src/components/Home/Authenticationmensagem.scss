@@ -1,0 +1,32 @@
+$bg-fundo: #3498db;
+$cor-texto: black;
+$bg-texto: red;
+
+.auth-message {
+    background-color: $bg-fundo;
+    color: $cor-texto;  
+    padding: 15px;
+    border: 1px solid $bg-fundo; 
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .auth-message p {
+    margin: 0 0 10px;
+  }
+  
+  .auth-message a {
+    color: $cor-texto;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid $cor-texto;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  
+  .auth-message a:hover {
+    color: $cor-texto;
+    background-color: $bg-texto;
+    border:1px solid $bg-texto; 
+  }

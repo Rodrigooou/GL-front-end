@@ -3,15 +3,14 @@ import { useNavigate } from "react-router-dom";
 import "./ConteudoHome.scss";
 import Logout from "../../assets/logout2.png";
 import prototipo from "../../assets/prototipo de tela.png";
-import { isAuthenticated } from "./authentication.jsx"; // Importe a função de autenticação
+import { isAuthenticated } from "./authentication";
+import AuthMessage from "./MensagemAutenticada";
 
 export default function Conteudo() {
   const navigate = useNavigate();
 
-  // Use a função de autenticação
   if (!isAuthenticated()) {
-    navigate("/login");
-    return null; // Impede a renderização do restante do componente se o usuário não estiver autenticado
+    return <AuthMessage />;
   }
 
   const storedUser = sessionStorage.getItem("user");
@@ -21,6 +20,7 @@ export default function Conteudo() {
     sessionStorage.removeItem("user");
     navigate("/");
   };
+
   return (
     <>
       <div className="titulo2">

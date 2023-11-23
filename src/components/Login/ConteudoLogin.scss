@@ -1,9 +1,13 @@
 $bg-color: #036eb5;
 $fieldset-bg-color: #2c9be5;
 $input-bg-color: #8cbfe1;
+$cor-texto:white;
+$botao-logar: #004080;
+$hover-logar: #002952;
+$fieldset-color: black;
 
 body {
-  color: white;
+  color: $cor-texto;
   background-color: $bg-color;
   margin: 0;
 }
@@ -18,7 +22,7 @@ fieldset {
   width: 50%;
   margin: 0 auto;
   background-color: $fieldset-bg-color;
-  color: black;
+  color: $fieldset-color;
 
   @media (max-width: 768px) {
     width: 80%;
@@ -71,8 +75,8 @@ input {
 }
 
 #btnLogar {
-  background-color: #004080;
-  color: white;
+  background-color: $botao-logar;
+  color: $cor-texto;
   padding: 10px 15px;
   cursor: pointer;
   border: none;
@@ -81,7 +85,7 @@ input {
 }
 
 #btnLogar:hover {
-  background-color: #002952;
+  background-color: $hover-logar;
 }
 
 @media (max-width: 480px) {

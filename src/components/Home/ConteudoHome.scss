@@ -1,5 +1,7 @@
 $bg-color: #036eb5;
 $bg-card: #3498db;
+$borda: black;
+$cor-texto: white;
 
 .titulo2 {
   display: flex;
@@ -21,7 +23,7 @@ $bg-card: #3498db;
 
   .item {
     background-color: $bg-card;
-    color: #fff;
+    color: $cor-texto;
     padding: 20px;
     text-align: justify;
     border-radius: 5px;
@@ -81,7 +83,7 @@ button {
 
   &:hover {
     background-color: $bg-card;
-    border: solid #000 2px;
+    border: solid $borda 2px;
     border-radius: 10px;
   }
 }
